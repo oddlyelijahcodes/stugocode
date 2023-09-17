@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title style="color: white">Countdown: Days Until the Election</title>
+  <link href="style2.css" rel="stylesheet">
+  <style>
+    #countdown {
+      font-size: 48px;
+      text-align: center;
+      color: white; 
+      font-weight: normal;/* Change the color to white */
+    }
+  </style>
+  <script>
+    // Set the date to countdown to
+    var countdownDate = new Date("May 25, 2024 00:00:00").getTime();
+
+    // Update the countdown every second
+    var countdownClock = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countdownDate - now;
+
+      // Calculations for days, hours, minutes, and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the countdown
+      document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+      // If the countdown is finished, display a message
+      if (distance < 0) {
+        clearInterval(countdownClock);
+        document.getElementById("countdown").innerHTML = "Countdown Expired";
+      }
+    }, 1000);
+  </script>
+</head>
+<body style="background-color: #00008B">
+  <h1 style="font-family: Arial; font-weight: normal">Countdown Clock</h1>
+  <div id="countdown"></div>
+<h2 style="font-family: Arial; font-weight: normal;">For any other concerns, refer to <a href="https://instagram.com/oddlyelijah?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">this Instagram!</a></h2>
+</body>
+</html>

@@ -1,0 +1,134 @@
+body {
+    /* Old browsers */
+    background: #141E30;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(-45deg, #35577D, #141E30);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(-45deg, #35577D, #141E30);
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  nav {
+    text-align: center;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: medium;
+    font-family: 'Times New Roman';
+  }
+  
+  nav ul li:hover > a {
+    background-color: #f4f4f4;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+  }
+  
+  nav ul li:hover > ul {
+    display: inherit;
+  }
+  
+  nav ul ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+  }
+  
+  nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 200px;
+  }
+  
+  nav ul li a:hover {
+    color: #fff;
+  }
+  
+  nav ul ul {
+    background-color: #f4f4f4;
+    border-radius: 0px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+  }
+  
+  nav ul ul li {
+    border-top: 1px solid #ccc;
+    float: none;
+    position: relative;
+  }
+  
+  nav ul ul li a {
+    padding: 15px 40px;
+    color: #333;
+  }
+  
+  nav ul ul li a:hover {
+    background-color: #ddd;
+  }
+  
+  nav ul ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+  }
+  
+  h1 {
+    color: #FFF;
+    font-size: 4em;
+    width: 100%;
+    border: blue;
+  }
+  
+  h2 {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+  }
+  
+  p {
+    color: aliceblue;
+    line-height: 1.3em;
+    text-align: right;
+    width: 100%;
+  }
+  
+  .byline {
+    font-family: 'Times New Roman';
+    color: rgba(255, 255, 255, 0.5);
+    float: left;
+    font-size: 14px;
+    padding-left: 10px;
+    text-transform: uppercase;
+  }
+  
+  .writer-img {
+    -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+    -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+    box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+    float: left;
+    width: 50px;
+  }
+  
